@@ -1,0 +1,23 @@
+{
+    "name": "Xpath",
+    "description": "Xpath Selector",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": { 
+          "128": "assest/32.png" 
+        },
+    "permissions": ["scripting", "activeTab","contextMenus"],
+    "content_scripts": [
+        {
+          "js": [
+            "app/src/content.js"
+          ],
+          "matches": [
+            "<all_urls>"
+          ]
+        }
+      ],
+      "background": {
+        "service_worker": "background.js"
+      }
+}

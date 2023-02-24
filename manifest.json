@@ -6,9 +6,10 @@
     "icons": { 
           "128": "assest/32.png" 
         },
-    "permissions": ["scripting", "activeTab","contextMenus"],
+    "permissions": ["scripting", "activeTab","contextMenus","tabs","alarms"],
     "content_scripts": [
         {
+          "run_at" :"document_start",
           "js": [
             "app/src/content.js"
           ],

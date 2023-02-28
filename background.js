@@ -27,18 +27,18 @@ chrome.contextMenus.create({
 // background.js
 
 //Listen for messages from the content script
-chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    console.log("Received message:", message);
+// chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+//     console.log("Received message:", message);
     
-    // Extract the id and class attributes from the message
-    var id = message.id;
-    var classes = message.classes;
+//     // Extract the id and class attributes from the message
+//     var id = message.id;
+//     var classes = message.classes;
     
-    // Do something with the id and class attributes
-    // For example, log them to the console
-    console.log("Element id:", id);
-    console.log("Element classes:", classes);
-  });
+//     // Do something with the id and class attributes
+//     // For example, log them to the console
+//     console.log("Element id:", id);
+//     console.log("Element classes:", classes);
+//   });
   
 
 

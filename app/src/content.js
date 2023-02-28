@@ -37,17 +37,17 @@ chrome.runtime.sendMessage({greeting :"hello"},function(response){
 // content.js
 
 // Get all elements on the page
-var elements = document.getElementsByTagName("*");
+// var elements = document.getElementsByTagName("*");
 
-// Loop through all elements and extract the id and class attributes
-for (var i = 0; i < elements.length; i++) {
-  var element = elements[i];
-  var id = element.getAttribute("id");
-  var classes = element.getAttribute("class");
+// // Loop through all elements and extract the id and class attributes
+// for (var i = 0; i < elements.length; i++) {
+//   var element = elements[i];
+//   var id = element.getAttribute("id");
+//   var classes = element.getAttribute("class");
   
-  // Send the id and class attributes to the background script
-  chrome.runtime.sendMessage({id: id, classes: classes});
-}
+//   // Send the id and class attributes to the background script
+//   chrome.runtime.sendMessage({id: id, classes: classes});
+// }
 
 
 
